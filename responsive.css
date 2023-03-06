@@ -1,0 +1,152 @@
+/* NAVIGATIE */
+@media screen and (max-width:992px) {
+    header {
+        height: 90vh;
+    }
+
+    nav .nav-top {
+        display: none;
+    }
+
+    nav .nav-bottom {
+        display: flex;
+        height: 7.5vh;
+        justify-content: space-between;
+    }
+
+    nav .nav-bottom ul.nav-list {
+        display: none;
+    }
+
+    nav .nav-bottom .mobile-nav {
+        display: unset;
+    }
+
+    nav .nav-bottom a img {
+        max-width: 125px;
+    }
+
+    nav .nav-bottom span.mobile-nav-link {
+        font-size: 25px;
+        cursor: pointer;
+    }
+
+    .nav-overlay {
+        height: 0%;
+        width: 100%;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: rgb(0,0,0);
+        background-color: rgba(0,0,0, 0.9);
+        overflow-y: hidden;
+        transition: 0.5s;
+    }
+      
+    .nav-overlay-content {
+        position: relative;
+        top: 10%;
+        width: 100%;
+        text-align: center;
+        margin-top: 30px;
+    }
+      
+    .nav-overlay a {
+        padding: 8px;
+        text-decoration: none;
+        font-family: 'Exo 2', 'sans serif';
+        font-size: 36px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+    }
+      
+    .nav-overlay a:hover, .nav-overlay a:focus {
+        color: #f1f1f1;
+    }
+      
+    .nav-overlay .closebtn {
+        position: absolute;
+        top: 10px;
+        right: 45px;
+        font-size: 60px;
+    }
+}
+
+
+/* FOOTER */
+@media screen and (max-width:792px) {
+    footer .footer-top, footer .footer-bottom {
+        width: 100%;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    footer .footer-bottom a img {
+        width: 60%;
+        margin-bottom: 2.5px;
+    }
+
+    footer .footer-bottom a {
+        display: block;
+    }
+}
+
+
+/* TEKST */
+@media screen and (max-width:792px) {
+    h1 {
+        font-size: 2.6rem;
+    }
+
+    h2 {
+        font-size: 1.55rem;
+    }
+
+    h3 {
+        font-size: 1.45rem;
+    }
+
+    h4 {
+        font-size: 1.2rem;
+    }
+}
+
+
+/* LAY-OUT */
+@media screen and (max-width:992px) { 
+    .page-box {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+}
+
+@media screen and (max-width:792px) {
+    .page-box {
+        flex-direction: column;
+    }
+
+    .title-box {
+        margin-left: 5%;
+        padding-right: 5%;
+    }
+    
+    .page-box .info-box {
+        width: 100%;
+    }
+    
+    .page-box .details-box {
+        width: 100%;
+        margin-top: 0px;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    .row-item img {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+}

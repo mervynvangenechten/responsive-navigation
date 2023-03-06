@@ -1,0 +1,361 @@
+/* Kleuren 
+    Blauw: rgb(45,46,131);
+    Groen: rgb(138,203,193);
+    Grijs: rgb(191,191,191);
+*\
+
+
+/* ALGEMEEN */
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+h1 {
+    font-family: 'Exo 2', 'sans serif';
+    font-size: 3.25rem;
+    color: rgb(45,46,131);
+}
+
+h2 {
+    font-family: 'Exo 2', 'sans serif';
+    font-size: 1.75rem;
+    color: rgb(138,203,193);
+}
+
+h3 {
+    font-family: 'Exo 2', 'sans serif';
+    font-size: 1.6rem;
+    color: rgb(138,203,193);
+}
+
+h4 {
+    font-family: 'Exo 2', 'sans serif';
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: rgb(45,46,131);
+}
+
+h5 {
+    font-family: 'Ubuntu', 'sans serif';
+    font-size: 1.1rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: rgb(45,46,131);
+}
+
+a {
+    color: black;
+}
+
+b {
+    font-weight: 500;
+}
+
+ul {
+    list-style-type: square;
+}
+
+li {
+    margin-left: 30px;
+}
+
+section {
+    margin-bottom: 50px;
+}
+
+:target {
+    padding-top: 13vh;
+    margin-top: -13vh;
+}
+
+
+/* FLEXBOX */
+.row {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.row-item {
+    width: 100%;
+}
+
+.row-item img {
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+}
+
+
+/* HEADER + NAVIGATIE */
+header {
+    height: 87.5vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+nav {
+    z-index: 100;
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    box-shadow: 2px 2px 4px black;
+}
+
+nav .nav-top {
+    display: flex;
+    width: 100%;
+    height: 3vh;
+    padding-left: 5%;
+    padding-right: 5%;
+    background-color: rgb(138,203,193);
+    align-items: center;
+    justify-content: right;
+}
+
+nav .nav-top a {
+    font-family: 'Exo 2', 'sans serif';
+    font-size: 0.8rem;
+    text-decoration: none;
+    margin-left: 25px;
+}
+
+nav .nav-top a:hover {
+    text-decoration: underline;
+}
+
+nav .nav-bottom {
+    display: flex;
+    width: 100%;
+    height: 10vh;
+    padding-left: 5%;
+    padding-right: 5%;
+    display: flex;
+    align-items: center;
+}
+
+nav .nav-bottom .mobile-nav {
+    display: none;
+}
+
+nav .nav-bottom a img {
+    height: 8vh;
+}
+
+nav .nav-bottom ul.nav-list {
+    display: flex;
+    width: max-content;
+    list-style-type: none;
+    margin-left: auto;
+}
+
+nav .nav-bottom ul.nav-list li a {
+    font-family: 'Exo 2', 'sans serif';
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+nav .nav-bottom ul.nav-list li a:hover {
+    text-decoration: underline;
+}
+
+
+/* FOOTER */
+footer {
+    width: 100%;
+    margin-top: 50px;
+}
+
+footer .footer-top {
+    width: 100%;
+    padding-left: 12.5%;
+    padding-right: 12.5%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: rgb(138,203,193);
+    font-family: 'Ubuntu', 'sans serif';
+    font-size: 0.85rem;
+    line-height: 0.85rem;
+}
+
+footer .footer-top b {
+    font-size: 0.9rem;
+}
+
+footer .footer-bottom {
+    width: 100%;
+    padding-left: 12.5%;
+    padding-right: 12.5%;
+    padding-top: 7.5px;
+    padding-bottom: 7.5px;
+    background-color: rgb(45,46,131);
+    color: white;
+    font-family: 'Exo 2', 'sans serif';
+    font-size: 0.75rem;
+    text-align: center;
+}
+
+footer .footer-bottom a img {
+    width: 25%;
+    margin-bottom: 7.5px;
+}
+
+footer .footer-bottom a {
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 0.95rem;
+    color: white;
+    text-decoration: none;
+}
+
+footer .footer-bottom a:hover {
+    text-decoration: underline;
+}
+
+
+/* LAY-OUT */
+.title-box {
+    width: max-content;
+    height: 15vh;
+    margin-left: 12.5%;
+}
+
+.page-box {
+    display: flex;
+    width: 100%;
+    padding-left: 12.5%;
+    padding-right: 12.5%;
+}
+
+.page-box .info-box {
+    width: 70%;
+    padding-right: 2.5%;
+    font-family: 'Ubuntu', 'sans serif';
+}
+
+.page-box .details-box {
+    width: 30%;
+    height: 100%;
+    padding: 10px;
+    border: 3px solid rgb(45,46,131);
+    background-color: rgb(220, 220, 220);
+    border-radius: 10px;
+    font-family: 'Ubuntu', 'sans serif';
+    font-size: 0.95rem;
+}
+
+.page-box .details-box section {
+    margin-bottom: 0px;
+}
+
+.page-box .details-box section#price {
+    text-align: center;
+}
+
+.page-box .details-box section#price span.price-amount {
+    font-family: 'Exo 2', 'sans serif';
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: rgb(45,46,131);
+}
+
+.page-box .details-box section#price i {
+    text-align: center;
+    font-size: 0.85rem;
+}
+
+.page-box .details-box hr {
+    margin-top: 12.5px;
+    margin-bottom: 12.5px;
+    border: 1.5px solid rgb(145, 145, 145);
+}
+
+.title-box .train-shape {
+    width: 110%;
+    height: 7.5px;
+    margin-top: -10.5px;
+    background-color: rgb(138,203,193);
+    border-bottom-right-radius: 10px;
+}
+
+.spacing {
+    height: 25px;
+}
+
+ul.sights {
+    list-style-type: square;
+}
+
+ul.sights li {
+    margin-left: 30px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+
+/* KNOPPEN */
+a.book-now {
+    display: block;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 7.5px;
+    padding: 5px;
+    background-color: rgb(45,46,131);
+    color: white;
+    font-family: 'Exo 2', 'sans serif';
+    font-size: 1.25rem;
+    font-weight: 600;
+    text-decoration: none;
+    text-align: center;
+    transition: all 0.4s ease-in-out;
+}
+
+a.question {
+    display: block;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2.5px;
+    background-color: rgb(138,203,193);
+    color: rgb(45,46,131);
+    font-family: 'Exo 2', 'sans serif';
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    text-align: center;
+    transition: all 0.4s ease-in-out;
+}
+
+
+/* ANIMATIES */
+a.book-now:hover {
+    padding-left: 30px;
+    background-color: rgb(138,203,193);
+    color: rgb(45,46,131);
+}
+
+a.book-now:hover a.question {
+    background-color: rgb(45,46,131);
+    color: white;
+}
+
+a.question:hover {
+    padding-left: 52.5px;
+    background-color: rgb(45,46,131);
+    color: white;
+}
